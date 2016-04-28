@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" charset="UTF-8">
+    <link  rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link  rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css">
+    <script src="scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="scripts/bootstrap.js" type="text/javascript"></script>
+    <title>新闻页</title>
+    <script type="text/javascript">
+        /*设置菜单当距离窗口顶部偏移距离小于86像素时，将激活附加导航插件*/
+        $(function(){
+            $("#menu").affix({
+                offset:{top:6}
+            })
+        });
+    </script>
+</head>
+<body>
+<!--导航条框架-->
+<div class="navbar container topbox">
+    <div class="navbar-inner">
+    <div class="page-head">
+        <div id="page-head-right">
+            <div id="main-login" class="pull-right">
+                <a  class="twi-btn-left" name="login" href="#"><span>登录</span></a>
+                <a  class="twi-btn-right" name="register" href="#"><span>注册</span> </a>
+            </div>
+        </div>
+    </div>
+
+        <!--下拉菜单项-->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span><span class="icon-bar"></span>  <span class="icon-bar"></span>
+            <a class="bar" href="#"><img src="images/news.png" id="logo"> </a>
+        </a>
+        <div class="nav-collapse" style="padding-bottom: 4%;margin-top: -8%;margin-left: 8%">
+            <ul class="nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">背单词<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">单词书</a></li>
+                        <li><a href="#">单词量测试</a> </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="main-menu dropdown-toggle" href="#" data-toggle="dropdown">炼句<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">课程</a> </li>
+                        <li><a href="#">设置</a> </li>
+                        <li><a href="#">计划</a> </li>
+                    </ul>
+                </li>
+
+                <li><a class="main-menu" href="#">阅读</a></li>
+                <li><a class="main-menu" href="#">市场</a> </li>
+
+                <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">社区<b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">小组</a> </li>
+                        <li><a href="#">论坛</a> </li>
+                        <li><a href="#">周刊</a> </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-search pull-left" action="">
+                <input type="text" class="search-query span2" placeholder="查词">
+                <span class="search-icon"></span>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!--附加导航菜单-->
+<div class="container menu">
+    <ul class="nav nav-pills" id="menu">
+        <li><a href="#">首页</a> </li>
+        <li><a href="#">计划</a> </li>
+        <li><a href="#">最新报道</a> </li>
+        <li><a href="#">猜你喜欢</a> </li>
+        <li><a href="#">读过的文章</a> </li>
+    </ul>
+</div>
+<!--页面主要部分-->
+<div class="container main-body">
+    <div class="row">
+        <div class="span8">
+            <section>
+                <div class="page-header">
+                    <h2>英语新闻</h2>
+                </div>
+            </section>
+            <div class="articles">
+
+                <div class="article">
+                    <div class="row">
+                        <div class="span2">
+                            <div class="thumnail"><img src="images/787.jpg" /> </div>
+                        </div>
+                        <div class="span6">
+                            <div class="title"><a href="#">China will be peaceful to every country!</a> </div>
+                            <div class="info"> <span>VOA</span> <span>06/29 2013</span> </div>
+                            <div class="summary">China is always a kind country,since thousands od years,it let more and more people study good things...</div>
+                        </div>
+                   </div>
+                        <!--难度等级-->
+                        <div class="data row" > <span class="span5">&nbsp;</span>
+                            <span class="span3"> <span class="item"> <i class="icon-tags"></i> <span>难度(</span> <span>高考 四级 </span> <span>)</span>
+                            </span> <span class="item"> <i class="icon-list-alt"></i> <span>单词(</span> <span class="number">752</span> <span>)</span> </span> </span>
+                        </div>
+                    </div>
+
+
+                <div class="article">
+                    <div class="row">
+                        <div class="span2">
+                            <div class="thumnail"> <img src="images/01.jpg"/> </div>
+                        </div>
+                        <div class="span6">
+                            <div class="title"> <a href="#">Washington Faces Terror Attack in &#39;White House Down&#39;</a> </div>
+                            <div class="info"> <span>VOA</span> <span>06/29 2013</span> </div>
+                            <div class="summary"> Filmmaker Roland Emmerich, known for his 1996 blockbuster, Independence Day, is now tackling the destruction of the White House and an impending nuclear attack by terrorists. . The film,&amp;nbsp... </div>
+                        </div>
+                    </div>
+                    <div class="data row"> <span class="span5">&nbsp;</span>
+                <span class="span3"> <span class="item"> <i class="icon-tags"></i>
+                    <span>难度(</span> <span>高一 高二 </span> <span>)</span> </span>
+                    <span class="item"> <i class="icon-list-alt"></i> <span>单词(</span> <span class="number">795</span> <span>)
+                    </span> </span> </span> </div>
+                </div>
+
+            <div class="article">
+                <div class="row">
+                    <div class="span2">
+                        <div class="thumnail"><img src="images/787.jpg" /> </div>
+                    </div>
+                    <div class="span6">
+                        <div class="title"><a href="#">China will be peaceful to every country!</a> </div>
+                        <div class="info"> <span>VOA</span> <span>06/29 2013</span> </div>
+                        <div class="summary">China is always a kind country,since thousands od years,it let more and more people study good things...</div>
+                    </div>
+                    </div>
+                    <!--难度等级-->
+                    <div class="data row"> <span class="span5">&nbsp;</span> <span class="span3"> <span class="item"> <i class="icon-tags"></i> <span>难度(</span> <span>高考 四级 </span> <span>)</span> </span> <span class="item"> <i class="icon-list-alt"></i> <span>单词(</span> <span class="number">752</span> <span>)</span> </span> </span> </div>
+                </div>
+        </div>
+
+        <div class="article">
+            <div class="row">
+                <div class="span2">
+                    <div class="thumnail"> <img src="images/01.jpg"/> </div>
+                </div>
+                <div class="span6">
+                    <div class="title"> <a href="#">Washington Faces Terror Attack in &#39;White House Down&#39;</a> </div>
+                    <div class="info"> <span>VOA</span> <span>06/29 2013</span> </div>
+                    <div class="summary"> Filmmaker Roland Emmerich, known for his 1996 blockbuster, Independence Day, is now tackling the destruction of the White House and an impending nuclear attack by terrorists. . The film,&amp;nbsp... </div>
+                </div>
+            </div>
+            <div class="data row"> <span class="span5">&nbsp;</span>
+                <span class="span3"> <span class="item"> <i class="icon-tags"></i>
+                    <span>难度(</span> <span>高一 高二 </span> <span>)</span> </span>
+                    <span class="item"> <i class="icon-list-alt"></i> <span>单词(</span> <span class="number">795</span> <span>)
+                    </span> </span> </span> </div>
+        </div>
+
+        <div class="article">
+            <div class="row">
+                <div class="span2">
+                    <div class="thumnail"><img src="images/787.jpg" /> </div>
+                </div>
+                <div class="span6">
+                    <div class="title"><a href="#">China will be peaceful to every country!</a> </div>
+                    <div class="info"> <span>VOA</span> <span>06/29 2013</span> </div>
+                    <div class="summary">China is always a kind country,since thousands od years,it let more and more people study good things...</div>
+                </div>
+                </div>
+                <!--难度等级-->
+                <div class="data row"> <span class="span5">&nbsp;</span> <span class="span3"> <span class="item"> <i class="icon-tags"></i> <span>难度(</span> <span>高考 四级 </span> <span>)</span> </span> <span class="item"> <i class="icon-list-alt"></i> <span>单词(</span> <span class="number">752</span> <span>)</span> </span> </span> </div>
+            </div>
+
+
+
+    <div class="article">
+        <div class="row">
+            <div class="span2">
+                <div class="thumnail"> <img src="images/01.jpg"/> </div>
+            </div>
+            <div class="span6">
+                <div class="title"> <a href="#">Washington Faces Terror Attack in &#39;White House Down&#39;</a> </div>
+                <div class="info"> <span>VOA</span> <span>06/29 2013</span> </div>
+                <div class="summary"> Filmmaker Roland Emmerich, known for his 1996 blockbuster, Independence Day, is now tackling the destruction of the White House and an impending nuclear attack by terrorists. . The film,&amp;nbsp... </div>
+            </div>
+        </div>
+        <div class="data row"> <span class="span5">&nbsp;</span> <span class="span3"> <span class="item"> <i class="icon-tags"></i> <span>难度(</span> <span>高一 高二 </span> <span>)</span> </span> <span class="item"> <i class="icon-list-alt"></i> <span>单词(</span> <span class="number">795</span> <span>)</span> </span> </span> </div>
+    </div>
+
+<!--底部分页-->
+    <div class="row">
+        <div class="span8 offset2">
+            <div class="pagination" style="margin:10%;">
+                <ul>
+                    <li class="active"><a href="#" class="endless_page_link" rel="page">1</a> </li>
+                     <li><a href="#" class="endless_page_link">2</a> </li>
+                    <li><a href="#" class="endless_page_link">3</a> </li>
+                    <li><a href="#" class="endless_page_link">4</a> </li>
+                    <li><a href="#" class="endless_page_link">5</a> </li>
+                    <li><a href="#" class="endless_page_link">6</a> </li>
+                    <li><a class="endless_page_link" href="#" rel="page">&gt;&gt;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+       <!--右部侧边栏效果-->
+        <div class="span4 width5">
+          <section>
+              <div class="page-header">
+                  <h3>术语</h3>
+              </div>
+          </section>
+            <blockquote>
+                <h4>What's news?</h4>
+                <p>Keep reading news may make you know a lot of things.</p>
+            </blockquote>
+            <section>
+                <div class="page-header">
+                    <h3>文章来源</h3>
+                </div>
+            </section>
+            <blockquote>
+            <div class="sources">
+                <div id="source">
+                    <div class="sources row">
+                        <div class="span1">
+                            <div class="thumbnail" ><img src="images/voa.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">美国之音</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/bbc.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">英国广播公司</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/business-week.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">商务周刊</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row">
+                        <div class="span1">
+                            <div class="thumbnail" ><img src="images/voa.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">美国之音</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/bbc.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">英国广播公司</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/business-week.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">商务周刊</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row">
+                        <div class="span1">
+                            <div class="thumbnail" ><img src="images/voa.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">美国之音</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/bbc.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">英国广播公司</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/business-week.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">商务周刊</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row">
+                        <div class="span1">
+                            <div class="thumbnail" ><img src="images/voa.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">美国之音</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/bbc.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">英国广播公司</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/business-week.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">商务周刊</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row">
+                        <div class="span1">
+                            <div class="thumbnail" ><img src="images/voa.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">美国之音</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/bbc.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">英国广播公司</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row" >
+                        <div class="span1">
+                            <div class="thumbnail"><img src="images/business-week.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">商务周刊</a> </h4>
+                        </div>
+                    </div>
+                    <div class="sources row">
+                        <div class="span1">
+                            <div class="thumbnail" ><img src="images/voa.png"  /> </div>
+                        </div>
+                        <div class="span2">
+                            <h4><a href="#">美国之音</a> </h4>
+                        </div>
+                    </div>
+
+                </div>
+             </div>
+            </blockquote>
+ </div>
+
+</div>
+    </div>
+</body>
+</html>
