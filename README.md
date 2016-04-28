@@ -33,11 +33,6 @@
 	    </ul>
       </div> 
       除了头部必要的这些书写：
-    <link  rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link  rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css">
-    <script src="scripts/jquery-1.9.1.js" type="text/javascript"></script>
-    <script src="scripts/bootstrap.js" type="text/javascript"></script>
     要想成功还需要2步，第一步：
     <script type="text/javascript">
         /*设置菜单当距离窗口顶部偏移距离小于86像素时，将激活附加导航插件*/
